@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+      background-color: black;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      font-style: italic;
+      text-decoration: underline;
+      font-weight: bolder;
+      color: rgb(255, 0, 0);
+    }
+
+    span {
+      color: blue;
+      font-weight: bolder;
+    }
+
+    button {
+      align-items: center;
+      background: chartreuse;
+      padding: 10px 10px;
+      border-radius: 12px;
+      width: 100%;
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+
+  <h1>Indiana Jones Movies</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/temple.jpg" alt="Temple of Doom">
+        <h3>Temple of Doom</h3>
+        <p>I am just making this up, but this movie is the Temple of Doom. In this movie Indiana Jones must enter into the catacombs of Italy to find the Cask of Amontillado. A rare wine that has been locked away for centuries.This is only the beginning of our hero's journey, and it shall not be the end.</p>
+        <button>Click here to <span>Download Movie</span></button>
+      </div>
+
+      <div class="column">
+        <img src="images/crusade.jpg" alt="Last Crusade">
+        <h3>The Last Crusade</h3>
+        <p>After discovering the technology to go back in time Indiana must face his greatest foe yet, religion. Indiana Jones embarks on the epic journey to save the library of Alexandria from being burned during the Great Crusades. Along the way, he meets the powerful kitten god Mr. Meowington. </p>
+        <button>Click here to <span>Download Movie</span></button>
+      </div>
+
+      <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders of the Lost Arc">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>Indiana Jones joins famed sailor Benedict Cumberbatch on his maiden voyage to discover the fountain of youth. During the adventure Indiana suspects Cumberbatch of secretly being Doctor Strange and must uncover the secrets to his power in order to save the world!</p>
+        <button>Click here to <span>Download Movie</span></button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>
